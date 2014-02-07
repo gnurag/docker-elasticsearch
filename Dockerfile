@@ -31,4 +31,6 @@ EXPOSE 9300
 # Define an entry point.
 ENTRYPOINT ["/usr/share/elasticsearch/bin/elasticsearch"]
 CMD ["-f"]
-USER elasticsearch
+
+# TODO: Run Elasticsearch as elasticsearch user, instead of the default root user.
+#USER elasticsearch
